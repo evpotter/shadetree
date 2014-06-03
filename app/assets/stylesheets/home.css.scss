@@ -1,9 +1,19 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body {
+	min-height: 100%;
+}
 
 body {
-	background-color: #ffffff;
+	background-color: #f3f4eb;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	//background: -webkit-linear-gradient(#6DD66F, #177519); /* For Safari */
+	//background: -o-linear-gradient(#6DD66F, #177519); /* For Opera 11.1 to 12.0 */
+	//background: -moz-linear-gradient(#6DD66F, #177519); /* For Firefox 3.6 to 15 */
+	//background: linear-gradient(#6DD66F, #177519); /* Standard syntax (must be last)*/
+}
+
+.navbar-brand,
+ul.nav li a {
+	color: #ffffff !important;
 }
 
 .outer {
@@ -11,34 +21,73 @@ body {
 	width: 90%;
 	margin: 10px auto;
 	text-align: center;
-	background-color: #333333;
-	border:2px solid;
+	background-color: #D0D0C1;
+	//border:2px solid;
 	border-radius:25px;
+	//border-color: #003300;
 	padding: 20px;
 }
 
 .center {
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
-.left {
+.left1 {
+	display: table-cell;
 	float: left;
+	margin: 10px 10px;
+	text-align: center;
+	background-color: #D0D0C1;
+	//border:2px solid;
+	border-radius:25px;
+	//border-color: #003300;
 	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 200px;
+}
 
+.left2 {
+	display: table-cell;
+	float: left;
+	margin: 10px 10px;
+	text-align: center;
+	//background-color: #eaeadf;
+	//border:2px solid;
+	//border-radius:25px;
+	//border-color: #003300;
+	padding: 20px;
 }
 
 .right {
-	float: right;
+	//float: right;
 	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 550px;
+	//margin-right: auto;
+}
 
+.right2 {
+	display: table-cell;
+	float: right;
+	margin: 12px 10px;
+	text-align: center;
+	//background-color: #eaeadf;
+	//border:2px solid;
+	//border-radius:25px;
+	//border-color: #003300;
+	padding: 20px;
 }
 
 .text {
-	color: #808080;
+	color: #4c3a2c;
+}
+
+.title {
+	font-weight: bold;
+    font-size: 150%
+}
+
+.button {
+	color: white;
+	background-color: #5aac41;
+	border-radius: 15px;
 }

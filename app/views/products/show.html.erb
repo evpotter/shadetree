@@ -1,0 +1,28 @@
+<div class= "outer">
+	<div class="left2">
+		<%= image_tag @product.img, size: "500x300" %>
+	</div>
+	<div class="right text">
+		<h3 class="title">
+			<%= @product.name %>
+		</h3>
+		<br/><br/>
+		<p>
+			<%= @product.desc %>
+		</p>
+		<br/><br/>
+		<div class="outer">
+			<%= form_tag(:action=> 'cart') do %>
+                <h5 class="left2">
+                    Price: $20.00
+                </h5>
+				<select>
+					<% for i in 0..@product.inv do %>
+						<option value="<%= i %>" class="right2"><%= i %></option>
+					<% end %>
+				</select>
+				<%= submit_tag "Add to cart", :class => 'right2' %>
+			<% end %>
+		</div>
+	</div>
+</div>

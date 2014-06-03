@@ -1,1 +1,13 @@
-<h1>Products coming soon!</h1>
+<div class="outer">
+  <h1 class="center text">Products</h1>
+</div>
+<div class="outer">
+  <% @products.each do |product| %>
+	  <a href="/products/<%= product.id %>">
+	    <div class= "left1">
+	      <%= image_tag product.img, size: "150x100" %><br/><br/>
+	      <%= product.name %>
+	    </div>
+	  </a>
+  <% end %>
+</div>

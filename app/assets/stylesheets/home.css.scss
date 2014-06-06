@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-	background-color: #f3f4eb;
+	background-color: #006227;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	//background: -webkit-linear-gradient(#6DD66F, #177519); /* For Safari */
 	//background: -o-linear-gradient(#6DD66F, #177519); /* For Opera 11.1 to 12.0 */
@@ -11,9 +11,18 @@ body {
 	//background: linear-gradient(#6DD66F, #177519); /* Standard syntax (must be last)*/
 }
 
+.navbar-inverse {
+    //background: linear-gradient(to bottom, #B8E5FA 0%,#B8E5FA 100%) !important;
+    background-color: #B8E5FA;
+    border-color: #006227;
+}
+
 .navbar-brand,
 ul.nav li a {
-	color: #ffffff !important;
+	color: #4c3a2c !important;
+    text-shadow: 1px 1px 0 #006227 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .outer {
@@ -21,7 +30,7 @@ ul.nav li a {
 	width: 90%;
 	margin: 10px auto;
 	text-align: center;
-	background-color: #D0D0C1;
+	background-color: #B8E5FA;
 	//border:2px solid;
 	border-radius:25px;
 	//border-color: #003300;
@@ -38,9 +47,9 @@ ul.nav li a {
 	float: left;
 	margin: 10px 10px;
 	text-align: center;
-	background-color: #D0D0C1;
+	//background-color: #D0D0C1;
 	//border:2px solid;
-	border-radius:25px;
+	//border-radius:25px;
 	//border-color: #003300;
 	padding: 20px;
 	width: 200px;
@@ -79,6 +88,7 @@ ul.nav li a {
 
 .text {
 	color: #4c3a2c;
+    text-shadow: 1px 1px 0 #006227;
 }
 
 .title {
@@ -90,4 +100,23 @@ ul.nav li a {
 	color: white;
 	background-color: #5aac41;
 	border-radius: 15px;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+.banner {
+    display: table;
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner img{
+    height: 100%;
+    width: 100%;
+    border-radius:25px;
 }

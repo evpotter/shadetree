@@ -122,3 +122,21 @@ ul.nav li a {
     width: 100%;
     border-radius:25px;
 }
+
+.vert {
+    vertical-align: middle;
+}
+
+.price {
+    display: table-cell;
+    float: left;
+    width: 20%;
+    height: auto;
+    margin: 10px 10px;
+    text-align: center;
+    //background-color: #eaeadf;
+    //border:2px solid;
+    //border-radius:25px;
+    //border-color: #003300;
+    padding: 20px;
+}

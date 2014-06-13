@@ -12,10 +12,10 @@
 		</p>
 		<br/><br/>
 		<div class="outer">
+            <span class="price">
+                Price: $25.00
+            </span>
 			<%= form_tag(:action=> 'cart') do %>
-                <h5 class="left2">
-                    Price: $25.00
-                </h5>
 				<select>
 					<% for i in 0..@product.inv do %>
 						<option value="<%= i %>" class="right2"><%= i %></option>
